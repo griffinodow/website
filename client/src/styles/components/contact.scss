@@ -1,0 +1,48 @@
+@use "../design/layouts.scss";
+#contact {
+  @extend %default-layout;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  align-items: center;
+  margin: 4rem 0;
+  div#form-card {
+    @extend %default-layout;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 800px;
+    min-height: 551px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #222222, #151515);
+    #form {
+      @extend %default-layout;
+      gap: 1.5rem;
+      width: 100%;
+      input,
+      textarea,
+      button {
+        padding: 12px;
+        border-radius: 1rem;
+        border: none;
+        color: var(--on-background);
+        background-color: var(--background);
+      }
+      button {
+        background-color: var(--elevated-surface);
+        &:hover {
+          background-color: var(--depressed-surface);
+          cursor: pointer;
+        }
+      }
+      textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 200px;
+      }
+    }
+  }
+}

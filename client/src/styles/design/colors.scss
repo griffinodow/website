@@ -1,0 +1,15 @@
+%cyber-color {
+  background: linear-gradient(to bottom right, #ff0000, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  --on-background: #fff;
+  --background: #000;
+  --on-surface: #fff;
+  --surface: #222;
+  --elevated-surface: #2b2b2b;
+  --depressed-surface: #131313;
+}

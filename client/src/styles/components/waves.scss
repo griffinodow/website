@@ -1,0 +1,14 @@
+.waves {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/images/waves.svg");
+}
+
+.waves-alt {
+  transform: rotate(180deg);
+  margin-top: -1px;
+  margin-bottom: -1px;
+}

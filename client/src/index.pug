@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="og:type" content="website")
+    meta(name="og:url" content="https://griffindow.com")
+    meta(name="og:title" content="Griffin | Software Engineer")
+    meta(name="og:description" content="Welcome to my portfolio.")
+    meta(name="title" content="Griffin | Software Engineer")
+    meta(name="description" content="Welcome to my portfolio.")
+    title Griffin | Software Engineer
+    link(rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap")
+    noscript
+      link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet")
+    link(rel='stylesheet' href='./style.min.css')
+  body 
+    header
+      section#desktop-nav
+        nav
+          a(href="https://griffindow.com") GD 
+          hr
+          a(href="#portfolio") Portfolio 
+          a(href="#contact") Contact
+      section#mobile-nav
+        section 
+          a(href="https://griffindow.com") GD 
+          hr
+          button#menu-toggle
+            img(src="./assets/icons/menu.svg")
+        section#mobile-menu.hidden
+          nav
+            a(href="#portfolio") Portfolio 
+            a(href="#contact") Contact
+    main 
+      header#banner
+        section.title 
+          span Software 
+          span Engineer
+        section.socials
+          a(href="https://www.linkedin.com/in/griffinodow/" target="_blank")
+            img(src="./assets/icons/linkedin.svg" alt="LinkedIn Profile" width="32" height="32")
+          a(href="https://github.com/griffinodow" target="_blank")
+            img(src="./assets/icons/github.svg" alt="Github Profile" width="32" height="32")
+        section.chevrons 
+          img(src="./assets/icons/chevron.svg" alt="Downward chevron")
+          img(src="./assets/icons/chevron.svg" alt="Downward chevron")
+          img(src="./assets/icons/chevron.svg" alt="Downward chevron")
+          img(src="./assets/icons/chevron.svg" alt="Downward chevron")
+      div.waves
+      section#portfolio
+        h2 Portfolio
+        p Projects being upgraded - check back soon
+      div.waves.waves-alt
+      section#contact
+        div#form-card
+          h2 Contact
+          section#input
+            form#form
+              input(name="email" type="email" placeholder="Email" required)
+              textarea(name="message" placeholder="Message" required)
+              button.button(type="submit") Submit
+          section#sync.hidden
+            img.spin(src="./assets/icons/sync.svg" width="48" height="48")
+          section#error.hidden
+            p Oh no! You can contact me directly at griffin@griffindow.com
+            p#error-message
+          section#success.hidden
+            h3 Thank you!
+    footer 
+      section 
+        small © 2022 Griffin Dow

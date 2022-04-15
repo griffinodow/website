@@ -34,3 +34,51 @@ My website to showcase myself and my portfolio. Visit at [griffindow.com](https:
 - [AWS Lambda](https://aws.amazon.com/lambda/)
 - [AWS S3](https://aws.amazon.com/s3/)
 - [AWS SES](https://aws.amazon.com/ses/)
+
+## Setup
+
+### Client
+
+Setup project
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Deploy to AWS
+
+```bash
+npm run deploy
+```
+
+### Server
+
+Build files
+
+```bash
+sam build
+```
+
+Run development server
+
+```bash
+sam local start-api
+```
+
+Deploy to AWS
+
+```bash
+sam deploy
+```
